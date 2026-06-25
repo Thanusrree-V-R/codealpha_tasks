@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Market Data</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<script src="js/market.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Market Data</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="market.html">Market</a>
+<a href="portfolio.html">Portfolio</a>
+
+</nav>
+
+</header>
+
+<div class="market-container">
+
+<h2>Available Stocks</h2>
+
+<table>
+
+<tr>
+<th>Company</th>
+<th>Price ($)</th>
+</tr>
+
+<tr>
+<td>Apple</td>
+<td>212.45</td>
+</tr>
+
+<tr>
+<td>Microsoft</td>
+<td>498.10</td>
+</tr>
+
+<tr>
+<td>Google</td>
+<td>183.72</td>
+</tr>
+
+<tr>
+<td>Amazon</td>
+<td>224.11</td>
+</tr>
+
+<tr>
+<td>Tesla</td>
+<td>318.55</td>
+</tr>
+
+<tr>
+<td>NVIDIA</td>
+<td>162.48</td>
+</tr>
+
+</table>
+
+</div>
+<div class="market-container">
+
+    <h2>Stock Growth Analysis</h2>
+
+    <canvas id="stockChart"></canvas>
+
+</div>
+
+<div class="buy-sell-container">
+
+<h2>Buy Stocks</h2>
+
+<select id="company">
+
+<option>Apple</option>
+<option>Microsoft</option>
+<option>Google</option>
+<option>Amazon</option>
+<option>Tesla</option>
+<option>NVIDIA</option>
+
+</select>
+
+<input
+type="number"
+id="quantity"
+placeholder="Enter Quantity">
+
+<button onclick="buyStock()">
+Buy Stock
+</button>
+
+</div>
+
+</body>
+
+</html>

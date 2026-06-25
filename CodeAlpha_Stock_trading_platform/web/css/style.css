@@ -1,0 +1,254 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#08132d;
+    color:white;
+    min-height:100vh;
+}
+
+header{
+    background:#0f172a;
+    padding:20px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:1px solid #1e293b;
+}
+
+header h1{
+    color:#38bdf8;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#38bdf8;
+}
+
+/* HERO SECTION */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:50px 80px;
+    flex-wrap:wrap;
+}
+
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:450px;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+.hero-content{
+    flex:1;
+    min-width:350px;
+}
+
+.hero-content h2{
+    font-size:4rem;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    padding:14px 28px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+}
+
+/* FEATURE CARDS */
+
+.features{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:150px;
+    padding:20px 60px 70px;
+    flex-wrap:wrap;
+}
+
+.card-link{
+    text-decoration:none;
+    color:white;
+}
+
+.card{
+    width:300px;
+    min-height:180px;
+    background:#1e293b;
+    border-radius:15px;
+    padding:25px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#e2e8f0;
+    line-height:1.5;
+}
+
+/* MARKET PAGE */
+
+.market-container,
+.portfolio-container{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+.market-container h2,
+.portfolio-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:#1e293b;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#38bdf8;
+    color:white;
+    padding:15px;
+}
+
+td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #334155;
+}
+
+tr:hover{
+    background:#334155;
+}
+
+/* BUY / SELL */
+
+.buy-sell-container{
+    width:90%;
+    max-width:600px;
+    margin:40px auto;
+    background:#1e293b;
+    padding:25px;
+    border-radius:10px;
+}
+
+.buy-sell-container h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:none;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#38bdf8;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0284c7;
+}
+
+/* CHART */
+
+canvas{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    margin-top:25px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    margin-top:50px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-content h2{
+        font-size:3rem;
+    }
+
+    .features{
+        flex-direction:column;
+    }
+
+    header{
+        flex-direction:column;
+        gap:15px;
+    }
+}

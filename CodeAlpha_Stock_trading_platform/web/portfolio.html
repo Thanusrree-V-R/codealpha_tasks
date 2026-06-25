@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Portfolio</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<script src="js/portfolio.js"></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Your Portfolio</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="market.html">Market</a>
+<a href="portfolio.html">Portfolio</a>
+
+</nav>
+
+</header>
+
+<div class="portfolio-container">
+
+<h2>Current Holdings</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Company</th>
+<th>Shares</th>
+</tr>
+
+</thead>
+
+<tbody id="portfolioTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<div class="buy-sell-container">
+
+<h2>Sell Stocks</h2>
+
+<input
+type="text"
+id="sellCompany"
+placeholder="Company Name">
+
+<input
+type="number"
+id="sellQuantity"
+placeholder="Quantity">
+
+<button onclick="sellStock()">
+Sell Stock
+</button>
+
+</div>
+
+</body>
+
+</html>
